@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lectorist</title>
+    <meta
+      name="description"
+      content="Lectorist is a mobile app for focused reading, listening, and learning."
+    >
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Lectorist</a>
+      <nav aria-label="Main navigation">
+        <a href="/privacy.html">Privacy</a>
+        <a href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Coming soon for iOS and Android</p>
+          <h1>Read with more focus. Keep what matters.</h1>
+          <p class="lede">
+            Lectorist is being built as a calmer mobile reading companion for
+            people who want to collect, revisit, and learn from what they read.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">
+              Join the early list
+            </a>
+            <a class="button secondary" href="/privacy.html">View privacy policy</a>
+          </div>
+        </div>
+
+        <div class="product-panel" aria-label="App preview">
+          <div class="phone">
+            <div class="phone-top"></div>
+            <div class="screen">
+              <p class="screen-label">Today</p>
+              <h2>Deep Work Notes</h2>
+              <div class="quote">
+                <span></span>
+                <p>Important passages, saved cleanly and ready to revisit.</p>
+              </div>
+              <div class="list-row"></div>
+              <div class="list-row short"></div>
+              <div class="progress">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" aria-label="Product highlights">
+        <article>
+          <h2>Built for mobile</h2>
+          <p>Simple public pages now, with room to connect App Store and Google Play links when the app is ready.</p>
+        </article>
+        <article>
+          <h2>Privacy ready</h2>
+          <p>A public privacy page is included so store review teams have a stable URL to inspect.</p>
+        </article>
+        <article>
+          <h2>Subscriber interest</h2>
+          <p>The current signup action uses email. A managed newsletter or Cloudflare Function can be added later.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>(c) <span id="year">2026</span> Lectorist. All rights reserved.</p>
+      <a href="/privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
