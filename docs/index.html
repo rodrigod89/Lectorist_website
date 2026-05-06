@@ -6,7 +6,7 @@
     <title>Lectorist</title>
     <meta
       name="description"
-      content="Lectorist is a mobile app for focused reading, listening, and learning."
+      content="Lectorist is a reading companion for language learners who want to read real content and grow vocabulary through contextual exposure."
     >
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
@@ -14,24 +14,24 @@
     <header class="site-header">
       <a class="brand" href="/">Lectorist</a>
       <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#principles">Principles</a>
         <a href="/privacy.html">Privacy</a>
-        <a href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">Contact</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Coming soon for iOS and Android</p>
-          <h1>Read with more focus. Keep what matters.</h1>
+          <p class="eyebrow">In development for iOS and Android</p>
+          <h1>Read real content in the language you are learning.</h1>
           <p class="lede">
-            Lectorist is being built as a calmer mobile reading companion for
-            people who want to collect, revisit, and learn from what they read.
+            Lectorist is a mobile reading companion for intermediate language
+            learners. Tap unknown words for lightweight translation, keep
+            reading, and let vocabulary grow from the words you actually meet.
           </p>
           <div class="actions">
-            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">
-              Join the early list
-            </a>
+            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">Contact</a>
             <a class="button secondary" href="/privacy.html">View privacy policy</a>
           </div>
         </div>
@@ -40,14 +40,16 @@
           <div class="phone">
             <div class="phone-top"></div>
             <div class="screen">
-              <p class="screen-label">Today</p>
-              <h2>Deep Work Notes</h2>
+              <p class="screen-label">Reading now</p>
+              <h2>El articulo de hoy</h2>
               <div class="quote">
                 <span></span>
-                <p>Important passages, saved cleanly and ready to revisit.</p>
+                <p>Tap a word, see just enough meaning, then continue reading.</p>
               </div>
-              <div class="list-row"></div>
-              <div class="list-row short"></div>
+              <div class="word-card">
+                <strong>recuerda</strong>
+                <small>remembered quickly</small>
+              </div>
               <div class="progress">
                 <span></span>
               </div>
@@ -56,19 +58,72 @@
         </div>
       </section>
 
-      <section class="details" aria-label="Product highlights">
+      <section class="intro" aria-label="Product overview">
+        <p>
+          Lectorist is for learners who already know the basics, but still meet
+          too many unknown words to comfortably read native material. It keeps
+          reading at the center: translation helps the flow, vocabulary comes
+          from real exposure, and progress stays quiet.
+        </p>
+      </section>
+
+      <section class="steps" id="how-it-works" aria-label="How Lectorist works">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Vocabulary grows from reading, not from busywork.</h2>
+        </div>
         <article>
-          <h2>Built for mobile</h2>
-          <p>Simple public pages now, with room to connect App Store and Google Play links when the app is ready.</p>
+          <span>01</span>
+          <h3>Read real content</h3>
+          <p>Open selected articles, saved text, RSS sources, PDFs, or documents in a clean mobile reader.</p>
         </article>
         <article>
-          <h2>Privacy ready</h2>
-          <p>A public privacy page is included so store review teams have a stable URL to inspect.</p>
+          <span>02</span>
+          <h3>Translate only when needed</h3>
+          <p>Tap unknown words for a lightweight translation with enough context to stay in the text.</p>
         </article>
         <article>
-          <h2>Subscriber interest</h2>
-          <p>The current signup action uses email. A managed newsletter signup can be added later.</p>
+          <span>03</span>
+          <h3>Recognize words later</h3>
+          <p>Words you translate are collected automatically. When they appear again and you keep reading, Lectorist treats that as progress.</p>
         </article>
+      </section>
+
+      <section class="principles" id="principles" aria-label="Product principles">
+        <div class="section-heading">
+          <p class="eyebrow">Product principles</p>
+          <h2>A calmer way to build vocabulary.</h2>
+        </div>
+        <div class="principle-grid">
+          <article>
+            <h3>Reading flow first</h3>
+            <p>Translation should help you continue, not pull you into another study mode.</p>
+          </article>
+          <article>
+            <h3>Contextual exposure</h3>
+            <p>Your vocabulary list is built from words you met while reading meaningful content.</p>
+          </article>
+          <article>
+            <h3>Quiet progress</h3>
+            <p>Progress appears through recognition over time, without forced quizzes or heavy dashboards.</p>
+          </article>
+          <article>
+            <h3>Personal learning data</h3>
+            <p>Reading history, imported content, translations, and progress are treated as private learning data.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="not-section" aria-label="What Lectorist is not">
+        <div>
+          <p class="eyebrow">What it is not</p>
+          <h2>Lectorist is not a full language course, flashcard app, social platform, grammar tutor, or general browser.</h2>
+        </div>
+        <p>
+          The app is intentionally narrow: a mobile-first reader for real content,
+          lightweight translation, vocabulary tracking, RSS, document import,
+          and a simple progress view.
+        </p>
       </section>
     </main>
 
