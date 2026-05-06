@@ -2,40 +2,38 @@
 
 Static marketing and legal website for Lectorist.
 
-## Cloudflare Pages
+## GitHub Pages
 
-Use these settings for the Git-connected Cloudflare Pages project:
+Use these settings for GitHub Pages:
 
-- Framework preset: `None`
-- Production branch: `main`
-- Build command: leave empty, or use `exit 0` if the dashboard requires a value
-- Build output directory: `public`
-- Root directory: leave empty / repository root
-- Environment variables: none required
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/docs`
+- Custom domain: `www.lectorist.com`
 
-Cloudflare Pages will publish everything inside `public`.
+GitHub Pages will publish everything inside `docs`.
 
 ## Local Preview
 
 Because this is a static site, you can preview it with any local static server:
 
 ```powershell
-npx serve public
+npx serve docs
 ```
 
-Or open `public/index.html` directly in a browser.
+Or open `docs/index.html` directly in a browser.
 
 ## Domain Setup
 
 The production domain is `www.lectorist.com`.
 
-In Cloudflare Pages, add `www.lectorist.com` under your Pages project's custom domains. If `lectorist.com` is already managed by Cloudflare DNS, Cloudflare can create the needed `CNAME` record automatically. If the domain is managed somewhere else, create this DNS record at that provider:
+In GitHub Pages, add `www.lectorist.com` under the repository's Pages settings. At the DNS provider, create this DNS record:
 
 - Type: `CNAME`
 - Name: `www`
-- Target: your Cloudflare Pages project domain, such as `<project-name>.pages.dev`
+- Target: `rodrigod89.github.io`
 
 ## Before Launch
 
-- Review `public/privacy.html` against the app's real data collection, analytics, crash reporting, subscriptions, and account features.
+- Review `docs/privacy.html` against the app's real data collection, analytics, crash reporting, subscriptions, and account features.
 - Add App Store and Google Play links when the mobile apps are available.
