@@ -3,137 +3,149 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lectorist</title>
-    <meta
-      name="description"
-      content="Lectorist is a reading companion for language learners who want to read real content and grow vocabulary through contextual exposure."
-    >
+    <link rel="icon" href="/assets/lectorist-icon.png" type="image/png">
+    <script src="/assets/theme.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
+    <title>Lectorist | Build your vocabulary by reading what interests you</title>
+    <meta name="description" content="Read daily news at A2 or B1 or bring your own text, files, and photos. Tap for translations and build a vocabulary list from what you read.">
+    <link rel="canonical" href="https://www.lectorist.com/">
+    <meta property="og:title" content="Lectorist | Build your vocabulary by reading what interests you">
+    <meta property="og:description" content="Read daily news at your level or bring your own text. Look up words as you read and see which ones start to stick.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lectorist.com/">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/">Lectorist</a>
-      <nav aria-label="Main navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#principles">Principles</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
+      <a class="brand" href="/"><img src="/assets/lectorist-icon.png" width="36" height="36" alt="">Lectorist</a>
+      <nav aria-label="Main navigation"><a href="#languages">Languages</a></nav>
     </header>
 
-    <main>
+    <main class="landing">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">In development for iOS and Android</p>
-          <h1>Read real content in the language you are learning.</h1>
-          <p class="lede">
-            Lectorist is a mobile reading companion for intermediate language
-            learners. Tap unknown words for lightweight translation, keep
-            reading, and let vocabulary grow from the words you actually meet.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20early%20access">Contact</a>
-            <a class="button secondary" href="/privacy.html">View privacy policy</a>
+          <p class="hero-kicker">A language learning app for readers</p>
+          <h1>Build your vocabulary by reading what interests you.</h1>
+          <p class="lede">Read daily news in the language you’re learning at A2 or B1, or practice with your own material. Upload a file, paste text, or scan a page. Tap any word for a translation as you read.</p>
+          <div class="actions" id="get-app" aria-label="Early access options">
+            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20Android%20early%20access">Request Android access</a>
+            <a class="button secondary" href="mailto:contact@lectorist.com?subject=Lectorist%20iOS%20early%20access">Request iPhone access</a>
           </div>
+          <p class="early-access-note">Lectorist is in early access.</p>
         </div>
 
-        <div class="product-panel" aria-label="App preview">
-          <div class="phone">
-            <div class="phone-top"></div>
-            <div class="screen">
-              <p class="screen-label">Reading now</p>
-              <h2>El articulo de hoy</h2>
-              <div class="quote">
-                <span></span>
-                <p>Tap a word, see just enough meaning, then continue reading.</p>
-              </div>
-              <div class="word-card">
-                <strong>recuerda</strong>
-                <small>remembered quickly</small>
-              </div>
-              <div class="progress">
-                <span></span>
-              </div>
+        <section class="reader-card landing-reader" aria-labelledby="demo-title">
+          <div class="reader-toolbar">
+            <h2 id="demo-title">Try the reader</h2>
+            <div class="language-switch" role="tablist" aria-label="Reader language">
+              <button id="tab-dutch" type="button" role="tab" aria-selected="true" aria-controls="panel-dutch"><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#nl"/></svg> Dutch</button>
+              <button id="tab-spanish" type="button" role="tab" aria-selected="false" aria-controls="panel-spanish" tabindex="-1"><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#es"/></svg> Spanish</button>
             </div>
           </div>
-        </div>
+          <div class="demo-panel" id="panel-dutch" role="tabpanel" aria-labelledby="tab-dutch">
+          <div class="demo-text">
+            <p class="demo-instruction">Tap the highlighted word.</p>
+            <h3 lang="nl">Een boek uit de buurt</h3>
+            <p class="reading-copy" lang="nl">In onze straat staat een kast met boeken. Iedereen mag een boek <span class="word-anchor"><button type="button" class="word-highlight" aria-expanded="false" aria-controls="meaning-dutch translation-dutch" data-demo-word>lenen</button><span class="demo-popover" id="meaning-dutch" lang="en" hidden>to borrow</span></span>.</p>
+          </div>
+          <div class="demo-translation" id="translation-dutch" hidden>
+            <p class="demo-instruction">In this sentence</p>
+            <p class="demo-original" lang="nl">Iedereen mag een boek lenen.</p>
+            <p class="demo-translated" lang="en">Anyone can borrow a book.</p>
+          </div>
+          </div>
+          <div class="demo-panel" id="panel-spanish" role="tabpanel" aria-labelledby="tab-spanish" hidden>
+            <div class="demo-text">
+              <p class="demo-instruction">Tap the highlighted word.</p>
+              <h3 lang="es">Un mercado en la plaza</h3>
+              <p class="reading-copy" lang="es">Cada sábado hay un mercado en la plaza. Lucía busca un <span class="word-anchor"><button type="button" class="word-highlight" aria-expanded="false" aria-controls="meaning-spanish translation-spanish" data-demo-word>puesto</button><span class="demo-popover" id="meaning-spanish" lang="en" hidden>stall</span></span> de fruta.</p>
+            </div>
+            <div class="demo-translation" id="translation-spanish" hidden>
+              <p class="demo-instruction">In this sentence</p>
+              <p class="demo-original" lang="es">Lucía busca un puesto de fruta.</p>
+              <p class="demo-translated" lang="en">Lucía is looking for a fruit stall.</p>
+            </div>
+          </div>
+        </section>
       </section>
 
-      <section class="intro" aria-label="Product overview">
-        <p>
-          Lectorist is for learners who already know the basics, but still meet
-          too many unknown words to comfortably read native material. It keeps
-          reading at the center: translation helps the flow, vocabulary comes
-          from real exposure, and progress stays quiet.
-        </p>
-      </section>
-
-      <section class="steps" id="how-it-works" aria-label="How Lectorist works">
+      <section class="site-section landing-values" aria-labelledby="reading-heading">
         <div class="section-heading">
-          <p class="eyebrow">How it works</p>
-          <h2>Vocabulary grows from reading, not from busywork.</h2>
+          <p class="hero-kicker">What you can read</p>
+          <h2 id="reading-heading">Daily news or a page of your own.</h2>
         </div>
-        <article>
-          <span>01</span>
-          <h3>Read real content</h3>
-          <p>Open selected articles, saved text, RSS sources, PDFs, or documents in a clean mobile reader.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Translate only when needed</h3>
-          <p>Tap unknown words for a lightweight translation with enough context to stay in the text.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Recognize words later</h3>
-          <p>Words you translate are collected automatically. When they appear again and you keep reading, Lectorist treats that as progress.</p>
-        </article>
-      </section>
-
-      <section class="principles" id="principles" aria-label="Product principles">
-        <div class="section-heading">
-          <p class="eyebrow">Product principles</p>
-          <h2>A calmer way to build vocabulary.</h2>
-        </div>
-        <div class="principle-grid">
-          <article>
-            <h3>Reading flow first</h3>
-            <p>Translation should help you continue, not pull you into another study mode.</p>
+        <div class="reading-features">
+          <article class="reading-feature">
+            <span class="feature-icon feature-news"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8h8m-8 4h8m-8 4h5"/></svg></span>
+            <h3>Daily news at your level</h3>
+            <p>Choose A2 or B1 for fresh stories in the language you’re learning.</p>
           </article>
-          <article>
-            <h3>Contextual exposure</h3>
-            <p>Your vocabulary list is built from words you met while reading meaningful content.</p>
+          <article class="reading-feature">
+            <span class="feature-icon feature-file"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6m-6 4h6"/></svg></span>
+            <h3>Upload or paste your own text</h3>
+            <p>Open a PDF or text file, or paste something you want to read.</p>
           </article>
-          <article>
-            <h3>Quiet progress</h3>
-            <p>Progress appears through recognition over time, without forced quizzes or heavy dashboards.</p>
-          </article>
-          <article>
-            <h3>Personal learning data</h3>
-            <p>Reading history, imported content, translations, and progress are treated as private learning data.</p>
+          <article class="reading-feature">
+            <span class="feature-icon feature-camera"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="3"/></svg></span>
+            <h3>Turn a photo into text</h3>
+            <p>Take a photo of a printed page. Lectorist extracts the text so you can read it and tap words for help.</p>
           </article>
         </div>
       </section>
 
-      <section class="not-section" aria-label="What Lectorist is not">
+      <section class="site-section vocabulary-section" aria-labelledby="vocabulary-heading">
         <div>
-          <p class="eyebrow">What it is not</p>
-          <h2>Lectorist is not a full language course, flashcard app, social platform, grammar tutor, or general browser.</h2>
+          <p class="hero-kicker">Your vocabulary</p>
+          <h2 id="vocabulary-heading">The words you look up become your vocabulary list.</h2>
+          <p class="section-copy">Lectorist saves the words you translate, so your list grows from stories and texts you chose to read. When a word turns up again and you read it without looking it up, Lectorist brings it into your reading review so you can check whether you remembered it.</p>
         </div>
-        <p>
-          The app is intentionally narrow: a mobile-first reader for real content,
-          lightweight translation, vocabulary tracking, RSS, document import,
-          and a simple progress view.
-        </p>
+        <div class="reader-card vocabulary-example">
+          <p class="demo-instruction">How one word becomes familiar</p>
+          <div class="vocabulary-example-word">
+            <strong lang="nl">lenen</strong>
+            <span>to borrow</span>
+          </div>
+          <ol class="vocabulary-timeline">
+            <li><strong>First read</strong><p>You tap <em lang="nl">lenen</em> in a story about books. Lectorist translates it and saves it to your list.</p></li>
+            <li><strong>A later read</strong><p>You see <em lang="nl">lenen</em> in a story about bikes. This time you understand it without tapping.</p></li>
+            <li><strong>Reading review</strong><p>Lectorist brings the word up again. You can confirm you remembered it or say you’re still learning it.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="site-section landing-languages" id="languages">
+        <h2>Supported Languages</h2>
+        <p class="section-copy">Read at A2 or B1 in any of these languages.</p>
+        <ul class="language-list" aria-label="Supported reading languages">
+          <li><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#nl"/></svg> Dutch</li>
+          <li><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#es"/></svg> Spanish</li>
+        </ul>
+        <p class="section-copy">Want to read in another language? Sign up below and select “Request another language.”</p>
+        <a class="button secondary language-request-link" href="#updates">Request a language</a>
+      </section>
+
+      <section class="site-section landing-signup" id="updates" aria-labelledby="updates-heading">
+        <div>
+          <h2 id="updates-heading">Help shape Lectorist.</h2>
+          <p class="section-copy">Lectorist is still in early access. Sign up and tell us what language you’d like to read in. We’d love to hear what would make Lectorist more useful to you.</p>
+        </div>
+        <div class="reader-card signup-card">
+          <iframe
+            src="https://tally.so/embed/e5DKpo?alignLeft=1&amp;hideTitle=1&amp;dynamicHeight=1"
+            title="Lectorist early access signup form"
+            width="100%"
+            height="420"
+            loading="lazy"
+          ></iframe>
+          <p><a href="https://tally.so/r/e5DKpo">Open the signup form on Tally</a></p>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>(c) <span id="year">2026</span> Lectorist. All rights reserved.</p>
-      <a href="/privacy.html">Privacy Policy</a>
+      <p>© 2026 Lectorist</p>
+      <nav aria-label="Footer"><a href="mailto:contact@lectorist.com">Contact</a><a href="/privacy.html">Privacy</a></nav>
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="/assets/landing-demo.js" defer></script>
+    <script src="https://tally.so/widgets/embed.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="nl" viewBox="0 0 24 16">
+    <path fill="#fff" d="M0 0h24v16H0z"/>
+    <path fill="#ae1c28" d="M0 0h24v5.33H0z"/>
+    <path fill="#21468b" d="M0 10.67h24V16H0z"/>
+  </symbol>
+  <symbol id="es" viewBox="0 0 24 16">
+    <path fill="#aa151b" d="M0 0h24v16H0z"/>
+    <path fill="#f1bf00" d="M0 4h24v8H0z"/>
+    <path fill="#aa151b" d="M6 6h4v3l-2 1-2-1z"/>
+  </symbol>
+  <symbol id="en" viewBox="0 0 24 16">
+    <path fill="#012169" d="M0 0h24v16H0z"/>
+    <path stroke="#fff" stroke-width="3" d="m0 0 24 16m0-16L0 16"/>
+    <path stroke="#c8102e" stroke-width="1" d="m0 0 24 16m0-16L0 16"/>
+    <path stroke="#fff" stroke-width="5" d="M12 0v16M0 8h24"/>
+    <path stroke="#c8102e" stroke-width="3" d="M12 0v16M0 8h24"/>
+  </symbol>
+  <symbol id="it" viewBox="0 0 24 16">
+    <path fill="#fff" d="M0 0h24v16H0z"/>
+    <path fill="#009246" d="M0 0h8v16H0z"/>
+    <path fill="#ce2b37" d="M16 0h8v16h-8z"/>
+  </symbol>
+</svg>

@@ -15,13 +15,15 @@ GitHub Pages will publish everything inside `docs`.
 
 ## Local Preview
 
-Because this is a static site, you can preview it with any local static server:
+On Windows, double-click `run-local.cmd` in the repository root or run it from PowerShell:
 
 ```powershell
-npx serve docs
+.\run-local.cmd
 ```
 
-Or open `docs/index.html` directly in a browser.
+Open <http://127.0.0.1:3000> in your browser. Press Ctrl+C to stop the server. The launcher requires Node.js and npm, and the first run may download `serve`.
+
+The local server serves `docs/` at the URL root, so links such as `/assets/styles.css` work as they do on GitHub Pages.
 
 ## Domain Setup
 
