@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/assets/lectorist-icon.png" type="image/png">
     <script src="/assets/theme.js"></script>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css?v=reader-focus">
     <title>Lectorist | Build your vocabulary by reading what interests you</title>
     <meta name="description" content="Read daily news at A2 or B1 or bring your own text, files, and photos. Tap for translations and build a vocabulary list from what you read.">
     <link rel="canonical" href="https://www.lectorist.com/">
@@ -14,26 +14,38 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lectorist.com/">
   </head>
-  <body>
+  <body class="editorial-site">
     <header class="site-header">
       <a class="brand" href="/"><img src="/assets/lectorist-icon.png" width="36" height="36" alt="">Lectorist</a>
-      <nav aria-label="Main navigation"><a href="#languages">Languages</a></nav>
+      <nav aria-label="Main navigation">
+        <a href="#samples">Sample stories</a>
+        <a href="#vocabulary">How it works</a>
+        <a href="#languages">Languages</a>
+        <a class="button header-access" href="#get-app">Get the app</a>
+      </nav>
     </header>
 
     <main class="landing">
       <section class="hero">
         <div class="hero-copy">
           <p class="hero-kicker">A language learning app for readers</p>
-          <h1>Build your vocabulary by reading what interests you.</h1>
+          <h1>Build your vocabulary by reading <em>what interests you.</em></h1>
           <p class="lede">Read daily news in the language you’re learning at A2 or B1, or practice with your own material. Upload a file, paste text, or scan a page. Tap any word for a translation as you read.</p>
-          <div class="actions" id="get-app" aria-label="Early access options">
-            <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20Android%20early%20access">Request Android access</a>
-            <a class="button secondary" href="mailto:contact@lectorist.com?subject=Lectorist%20iOS%20early%20access">Request iPhone access</a>
+          <div class="actions">
+            <a class="button primary hero-read-button" href="#get-app"><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/store-icons.svg#apple"/></svg><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/store-icons.svg#google-play"/></svg> <span>Get the app</span></a>
+            <a class="button secondary" href="#try-reader">Try a short read</a>
           </div>
-          <p class="early-access-note">Lectorist is in early access.</p>
+          <p class="early-access-note">Dutch and Spanish · A2–B1</p>
+          <ul class="hero-benefits" aria-label="How Lectorist helps">
+            <li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v15M12 6C8.5 3 5 3 2 5v14c3-2 6.5-2 10 2 3.5-4 7-4 10-2V5c-3-2-6.5-2-10 1Z"/></svg><span>Read what interests you</span></li>
+            <li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg><span>Get help in the moment</span></li>
+            <li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9m0 4C7 16 4 13 4 7c5 0 8 3 8 8m0-3c0-5 3-8 8-8 0 5-3 8-8 8Z"/></svg><span>See which words stick</span></li>
+          </ul>
         </div>
 
-        <section class="reader-card landing-reader" aria-labelledby="demo-title">
+        <div class="reader-stage">
+          <section class="reader-card landing-reader" id="try-reader" tabindex="-1" aria-labelledby="demo-title">
+            <div class="reader-notch" aria-hidden="true"></div>
           <div class="reader-toolbar">
             <h2 id="demo-title">Try the reader</h2>
             <div class="language-switch" role="tablist" aria-label="Reader language">
@@ -65,34 +77,60 @@
               <p class="demo-translated" lang="en">Lucía is looking for a fruit stall.</p>
             </div>
           </div>
-        </section>
+          </section>
+        </div>
       </section>
 
-      <section class="site-section landing-values" aria-labelledby="reading-heading">
+      <section class="site-section story-shelf" id="samples" aria-labelledby="samples-heading">
+        <p class="hero-kicker">Sample stories</p>
+        <h2 id="samples-heading">Read real stories at your level.</h2>
+        <p class="section-copy">Try a short story below. In the app, fresh news arrives daily at A2 or B1.</p>
+        <div class="sample-grid">
+          <a class="sample-link story-card story-dutch" href="/read/dutch/">
+            <h3 lang="nl">Een boek uit de buurt</h3>
+            <p>A little book exchange brings neighbors together.</p>
+            <div class="story-footer">
+              <div class="story-meta"><span class="story-language"><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#nl"/></svg> Dutch</span><span>A2</span><span>1 min</span></div>
+              <span class="story-action">Read the story <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+          <a class="sample-link story-card story-spanish" href="/read/spanish/">
+            <h3 lang="es">Un mercado en la plaza</h3>
+            <p>Lucía visits the Saturday market and picks up fruit for a friend.</p>
+            <div class="story-footer">
+              <div class="story-meta"><span class="story-language"><svg class="language-flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false"><use href="/assets/language-flags.svg#es"/></svg> Spanish</span><span>A2</span><span>1 min</span></div>
+              <span class="story-action">Read the story <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="site-section landing-values personal-reading" aria-labelledby="reading-heading">
         <div class="section-heading">
-          <p class="hero-kicker">What you can read</p>
-          <h2 id="reading-heading">Daily news or a page of your own.</h2>
+          <p class="hero-kicker">Your library</p>
+          <h2 id="reading-heading">Bring something you want to read.</h2>
+          <p class="section-copy">Add your own material and look up words in the same reader.</p>
         </div>
         <div class="reading-features">
           <article class="reading-feature">
-            <span class="feature-icon feature-news"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8h8m-8 4h8m-8 4h5"/></svg></span>
-            <h3>Daily news at your level</h3>
-            <p>Choose A2 or B1 for fresh stories in the language you’re learning.</p>
-          </article>
-          <article class="reading-feature">
             <span class="feature-icon feature-file"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6m-6 4h6"/></svg></span>
-            <h3>Upload or paste your own text</h3>
-            <p>Open a PDF or text file, or paste something you want to read.</p>
+            <h3>Open a file</h3>
+            <p>Bring a PDF or text file from your device.</p>
           </article>
           <article class="reading-feature">
             <span class="feature-icon feature-camera"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="3"/></svg></span>
-            <h3>Turn a photo into text</h3>
+            <h3>Scan a printed page</h3>
             <p>Take a photo of a printed page. Lectorist extracts the text so you can read it and tap words for help.</p>
+          </article>
+          <article class="reading-feature">
+            <span class="feature-icon feature-news" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5H5v16h14V5h-3M9 3h6v4H9zM8 11h8m-8 4h6"/></svg></span>
+            <h3>Paste your own text</h3>
+            <p>Copy a story, a note, or a passage and start reading.</p>
           </article>
         </div>
       </section>
 
-      <section class="site-section vocabulary-section" aria-labelledby="vocabulary-heading">
+      <section class="site-section vocabulary-section" id="vocabulary" aria-labelledby="vocabulary-heading">
         <div>
           <p class="hero-kicker">Your vocabulary</p>
           <h2 id="vocabulary-heading">The words you look up become your vocabulary list.</h2>
@@ -126,6 +164,13 @@
       <section class="site-section landing-signup" id="updates" aria-labelledby="updates-heading">
         <div>
           <h2 id="updates-heading">Help shape Lectorist.</h2>
+          <div class="app-access" id="get-app">
+            <h3>Get the app in early access</h3>
+            <div class="actions" aria-label="Early access options">
+              <a class="button primary" href="mailto:contact@lectorist.com?subject=Lectorist%20iOS%20early%20access"><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/store-icons.svg#apple"/></svg> Request iPhone access</a>
+              <a class="button secondary" href="mailto:contact@lectorist.com?subject=Lectorist%20Android%20early%20access"><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/store-icons.svg#google-play"/></svg> Request Android access</a>
+            </div>
+          </div>
           <p class="section-copy">Lectorist is still in early access. Sign up and tell us what language you’d like to read in. We’d love to hear what would make Lectorist more useful to you.</p>
         </div>
         <div class="reader-card signup-card">
